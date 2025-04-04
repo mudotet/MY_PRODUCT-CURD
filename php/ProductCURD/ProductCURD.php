@@ -35,7 +35,7 @@ class Product{
         $stmt = $pdo->prepare($sql);
         $result = $stmt -> execute();
         if($result){
-            header('Refresh: 1; url=deleteProduct.php');
+            header('Refresh: 1; url=index.php');
         }else{
             echo "<span style='color: #333;'>Failed to delete product!</span>";
         }
